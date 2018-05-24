@@ -8,4 +8,4 @@ VALUES
 
 
 
-for full documentation, you can access swagger-docs in "/api/swagger-ui.html"
+for full documentation, you can access swagger-docs in "http://just-app-.herokuapp.com/api/swagger-ui.html"
