@@ -6,6 +6,6 @@ INSERT INTO oauth_client_details (client_id, client_secret, scope, authorized_gr
 VALUES
 ('test-client', 'secret', 'read,write', 'authorization_code,password,refresh_token,implicit', '900', '{}','Sidapdap!@#');
 
-
+to create user please go through "http://just-app-.herokuapp.com/api/swagger-ui.html#!/user45controller/signUpUsingPOST_2"
 
 for full documentation, you can access swagger-docs in "http://just-app-.herokuapp.com/api/swagger-ui.html"
