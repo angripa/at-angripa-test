@@ -29,7 +29,7 @@ logging:
   level:
    ROOT: ERROR
    awantunai.test: INFO
-   org.springframework.web: DEBUG
+#   org.springframework.web: DEBUG
 ---
 spring:
   profiles: stage
@@ -42,7 +42,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     continue-on-error: true
   jpa:
-    show-sql: true
+    show-sql: false
     hibernate.ddl-auto: update
     properties:
       hibernate:
