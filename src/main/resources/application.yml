@@ -36,7 +36,7 @@ spring:
   application:
     name: hitarokkap
   datasource:
-    url : jdbc:mysql://localhost:3306/hitarokkap-db?useSSL=false
+    url : jdbc:mysql://localhost:3306/hitarokkap-db?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: admin123
     driver-class-name: com.mysql.jdbc.Driver
