@@ -37,8 +37,8 @@ public class Account extends AuditableEntity<Long>{
 	private Integer age;
 	@Column(name="distance")
 	private Integer distance;
-	@Column(name="nickname")
-	private String nickname;
+	@Column(name="name")
+	private String name;
 	@Column(name="fullname")
 	private String fullname;
 	@Column(name="profileImageUrl")

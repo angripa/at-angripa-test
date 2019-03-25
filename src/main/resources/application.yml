@@ -55,6 +55,6 @@ logging:
   path: ./logs
   file: ${logging.path}/${spring.application.name}.log
   level:
-   ROOT: ERROR
-   awantunai.test: INFO
-#   org.springframework.web: DEBUG
+    ROOT: ERROR
+    hita.rokkap.com: INFO
+    org.springframework.web: INFO

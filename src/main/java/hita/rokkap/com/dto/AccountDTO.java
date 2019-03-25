@@ -25,7 +25,7 @@ public class AccountDTO extends AuditableDTO {
     private String interest;
     private Integer age;
     private Integer distance;
-    private String nickname;
+    private String name;
     private String fullname;
     private String profileImageUrl;
 

@@ -32,7 +32,7 @@ public class RegisterDTO implements Serializable {
     private String bio;
     private Integer age;
     private Integer distance;
-    private String nickname;
+    private String name;
     private String interest;
     private String fullname;
     private String profileImageUrl;
