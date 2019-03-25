@@ -46,7 +46,7 @@ spring:
     hibernate.ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQL94Dialect
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     generate-ddl: true    
 server:
   context-path: /api
