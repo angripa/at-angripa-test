@@ -1,14 +1,14 @@
 spring:
   profiles:
     active:
-    - local
+    - stage
 ---
 spring:
   profiles: local
   application:
     name: awan-tunai-test
   datasource:
-    url: jdbc:mysql://localhost:3306/test-db
+    url: jdbc:mysql://localhost:3306/hitarokkap-db
     username: root
     password:
     driver-class-name: com.mysql.jdbc.Driver
@@ -28,17 +28,17 @@ logging:
   file: ${logging.path}/${spring.application.name}.log
   level:
    ROOT: ERROR
-   awantunai.test: INFO
-#   org.springframework.web: DEBUG
+   hita.rokkap.com: INFO
+   org.springframework.web: INFO
 ---
 spring:
   profiles: stage
   application:
-    name: awan-tunai-test
+    name: hitarokkap
   datasource:
-    url : jdbc:postgresql://ec2-23-23-130-158.compute-1.amazonaws.com:5432/d15g15k918dg8q?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
-    username: vyxbphpyjvraps
-    password: b9d44f7031b8266a56add9f3563d8bd65cc89545fd7330842890eb7e9623c095
+    url : jdbc:mysql://localhost:3306/hitarokkap-db
+    username: root
+    password: admin123
     driver-class-name: com.mysql.jdbc.Driver
     continue-on-error: true
   jpa:
