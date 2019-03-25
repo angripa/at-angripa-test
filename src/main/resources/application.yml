@@ -1,24 +1,24 @@
 spring:
   profiles:
     active:
-    - stage
+    - local
 ---
 spring:
   profiles: local
   application:
     name: awan-tunai-test
   datasource:
-    url : jdbc:postgresql://localhost:5432/test-db
-    username: postgres
-    password: postgres
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://localhost:3306/test-db
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
     continue-on-error: true
   jpa:
     show-sql: true
     hibernate.ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQL94Dialect
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     generate-ddl: true    
 server:
   context-path: /api
@@ -39,7 +39,7 @@ spring:
     url : jdbc:postgresql://ec2-23-23-130-158.compute-1.amazonaws.com:5432/d15g15k918dg8q?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
     username: vyxbphpyjvraps
     password: b9d44f7031b8266a56add9f3563d8bd65cc89545fd7330842890eb7e9623c095
-    driver-class-name: org.postgresql.Driver
+    driver-class-name: com.mysql.jdbc.Driver
     continue-on-error: true
   jpa:
     show-sql: false
